@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body id="main">
+        <div class="header">
+            <h1 id="title">Form Title</h1>
+            <p id="description">Description</p>
+        </div>
+        <form id="survey-form">
+
+            <div>
+                <div>
+                     <label id="name-label" for="name">name</label> 
+                </div>
+                <div>
+                    <input placeholder="Your name here" type="text" id="name" required>
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <label id="email-label" for="email">email</label> 
+                </div>
+                <div>
+                    <input placeholder="Your e-mail here" type="email" id="email" required>
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <label id="number-label" for="number">number</label> 
+                </div>
+                <div>
+                    <input placeholder="number" type="number" min="0" max="100" id="number" required>
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <label id="drop-label" for="number">dropbox</label> 
+                </div>
+                <div>
+                    <select name="currentPos" id="dropdown">
+                        <option value="student">Student</option>
+                        <option value="job">Full time job</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <label id="radio-label" for="userRatings">RadioButton</label> 
+                </div>
+                <div>
+                    <ul>
+                        <li class="radio">
+                            <label>
+                                teste1 
+                                <input name="radio-buttons" value="1" type="radio" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                teste1 
+                                <input name="radio-buttons" value="2" type="radio" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                teste1 
+                                <input name="radio-buttons" value="3" type="radio" class="userRatings">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <label id="check-label" for="preferences">RadioButton</label> 
+                </div>
+                <div>
+                    <ul>
+                        <li class="checkbox">
+                            <label>
+                                option1 
+                                <input name="prefer" value="1" type="checkbox" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                option2
+                                <input name="prefer" value="2" type="checkbox" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                option3 
+                                <input name="prefer" value="3" type="checkbox" class="userRatings">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label id="email-label" for="email">email</label> 
+                </div>
+                <div>
+                    <textarea id="comments" class="input-field" placeholder="Enter your comment here..." name="comment" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
