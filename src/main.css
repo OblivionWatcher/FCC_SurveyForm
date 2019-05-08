@@ -1,3 +1,25 @@
 #main{
     text-align: center;
+    margin:0px;
+    padding:0px;
+}
+ul{
+    list-style: none;
+    margin:0px;
+}
+.block{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: cyan;
+}
+.leftdiv{
+    padding: 10px;
+    width: 200px;
+    text-align: right;
+}
+.rightdiv{
+    padding: 10px;
+    width: 200px;
+    text-align: left;
 }
