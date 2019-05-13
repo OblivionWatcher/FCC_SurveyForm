@@ -3,6 +3,26 @@
     margin:0px;
     padding:0px;
 }
+#survey-form{
+    box-shadow: 9px 9px 32px 0px rgba(189,183,189,1);
+    width: 42vw;
+    margin: auto;
+}
+#submit{
+    width: 150px;
+    height:40px;
+    background-color:#33bdef;
+    color:#ffffff;
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    border:1px solid #057fd0;
+    border-radius:4px;
+    cursor:pointer;
+    margin:40px 0px 30px 0px;
+    transition-duration: 0.5s;
+}
+#submit:hover{
+    background-color: #0ea0d4;
+}
 ul{
     list-style: none;
     margin:0px;
@@ -11,7 +31,6 @@ ul{
     text-align: center;
     display: flex;
     justify-content: center;
-    background-color: cyan;
 }
 .leftdiv{
     padding: 10px;
