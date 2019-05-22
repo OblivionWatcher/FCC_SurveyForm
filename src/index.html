@@ -2,11 +2,14 @@
     <head>
         <title>Survey Form</title>
         <link rel="stylesheet" href="./main.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     </head>
     <body id="main">
         <div class="header">
-            <h1 id="title">Form Title</h1>
-            <p id="description">Description</p>
+            <i class="fas fa-gamepad teste"></i>
+            <h1 id="title">Gaming</h1>
+            <p id="description">Press Start</p>
         </div>
 
         <form id="survey-form">
@@ -26,7 +29,9 @@
                     <label id="email-label" for="email">E-mail</label> 
                 </div>
                 <div class="rightdiv">
-                    <input placeholder="Your e-mail" type="email" id="email" required>
+                    <span class="input">
+                        <input placeholder="Your e-mail" type="email" id="email" required>
+                    </span>
                 </div>
             </div>
 
@@ -43,12 +48,14 @@
 
             <div class="block">
                 <div class="leftdiv">
-                    <label id="drop-label" for="dropbox">dropbox</label> 
+                    <label id="drop-label" for="dropbox">Which plataform do you play?</label> 
                 </div>
                 <div class="rightdiv">
                     <select name="currentPos" id="dropdown">
-                        <option value="student">Student</option>
-                        <option value="job">Full time job</option>
+                        <option value="xbox">XBOX ONE</option>
+                        <option value="ps4">Playstation 4</option>
+                        <option value="nintendo">Nintendo Switch</option>
+                        <option value="siqueira">PC</option>
                     </select>
                 </div>
             </div>
@@ -56,26 +63,26 @@
 
             <div class="block">
                 <div class="leftdiv">
-                    <label id="radio-label" for="userRatings">RadioButton</label> 
+                    <label id="radio-label" for="userRatings">Do you have any interest in game development?</label> 
                 </div>
                 <div class="rightdiv">
                     <ul>
                         <li class="radio">
                             <label>
-                                <input name="radio-buttons" value="1" type="radio" class="userRatings">
-                                teste1 
+                                <input name="radio-buttons" value="yes" type="radio" class="userRatings">
+                                Yes, I do
                             </label>
                         </li>
                         <li class="radio">
                             <label>
-                                <input name="radio-buttons" value="2" type="radio" class="userRatings">
-                                teste1 
+                                <input name="radio-buttons" value="maybe" type="radio" class="userRatings">
+                                Maybe
                             </label>
                         </li>
                         <li class="radio">
                             <label>
-                                <input name="radio-buttons" value="3" type="radio" class="userRatings">
-                                teste1
+                                <input name="radio-buttons" value="no" type="radio" class="userRatings">
+                                No, I don't
                             </label>
                         </li>
                     </ul>
@@ -85,28 +92,59 @@
 
             <div class="block">
                 <div class="leftdiv">
-                    <label id="check-label" for="preferences">RadioButton</label> 
+                    <label id="check-label" for="preferences">Wich styles do you like?</label> 
                 </div>
                 <div class="rightdiv">
                     <ul>
                         <li class="checkbox">
                             <label>
                                 <input name="prefer" value="1" type="checkbox" class="userRatings">
-                                option1 
+                                FPS
                             </label>
                         </li>
                         <li class="checkbox">
                             <label>
                                 <input name="prefer" value="2" type="checkbox" class="userRatings">
-                                option2
+                                TPS
                             </label>
                         </li>
                         <li class="checkbox">
                             <label>
                                 <input name="prefer" value="3" type="checkbox" class="userRatings">
-                                option3 
+                                RPG
                             </label>
                         </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="prefer" value="3" type="checkbox" class="userRatings">
+                                MMORPG
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="prefer" value="3" type="checkbox" class="userRatings">
+                                Hack and Slash
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="prefer" value="3" type="checkbox" class="userRatings">
+                                Fighting
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="prefer" value="3" type="checkbox" class="userRatings">
+                                Survival
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input name="prefer" value="3" type="checkbox" class="userRatings">
+                                Battle Royale
+                            </label>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -114,15 +152,14 @@
 
             <div class="block">
                 <div class="leftdiv">
-                    <label id="email-label" for="email">email</label> 
+                    <label id="email-label" for="email">How games affected your life?</label> 
                 </div>
                 <div class="rightdiv">
-                    <textarea id="comments" class="input-field" placeholder="Enter your comment here..." name="comment" id="" cols="30" rows="10"></textarea>
+                    <textarea id="comments" class="input-field" placeholder="Text here..." name="comment" id="" cols="30" rows="10"></textarea>
                 </div>
             </div>
 
-            <button id="submit" type="submit">Submit</button>
-
+            <button id="submit" type="submit"><i class="fas fa-share"></i>
         </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>

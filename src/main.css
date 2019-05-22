@@ -1,27 +1,41 @@
 #main{
+    color: #fffff9;
     text-align: center;
     margin:0px;
-    padding:0px;
+    padding:20px;
+    font-family: 'Press Start 2P', cursive;
+    background: url("http://eskipaper.com/images/8-bit-background-1.jpg") no-repeat center center fixed;
+    
 }
 #survey-form{
-    box-shadow: 9px 9px 32px 0px rgba(189,183,189,1);
-    width: 42vw;
     margin: auto;
+    background-color: rgba(59, 0, 255, 0.9);
+    border-radius: 4px;
+    width: 60vw;
+    padding: 10px;
 }
 #submit{
     width: 150px;
     height:40px;
-    background-color:#33bdef;
-    color:#ffffff;
-    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background-color:#fffff1;
+    color:#111111;
+    box-shadow: 0px 1px 0px 0px #111111;
     border:1px solid #057fd0;
     border-radius:4px;
     cursor:pointer;
     margin:40px 0px 30px 0px;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 #submit:hover{
-    background-color: #0ea0d4;
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+#dropdown{
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px; 
 }
 ul{
     list-style: none;
@@ -33,12 +47,27 @@ ul{
     justify-content: center;
 }
 .leftdiv{
-    padding: 10px;
-    width: 200px;
+    padding: 20px;
+    width: 400px;
     text-align: right;
 }
 .rightdiv{
     padding: 10px;
-    width: 200px;
+    width: 400px;
     text-align: left;
+}
+.header{
+    margin: 20px 0px 40px 0px;
+}
+.userRatings{
+    margin :10px;
+}
+.teste{
+    transform: scale(2.0);
+}
+input {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
 }
