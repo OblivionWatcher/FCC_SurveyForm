@@ -1,19 +1,12 @@
 #main{
-    color: #fffff9;
+    color: #1d1d1d;
     text-align: center;
     margin:0px;
     padding:20px;
     font-family: 'Press Start 2P', cursive;
-    background: url("http://eskipaper.com/images/8-bit-background-1.jpg") no-repeat center center fixed;
-    
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/d07eaebd-9ec8-4032-8a02-7f85abb4ac44/d8oalkw-cbd821cd-6461-4f53-9eb6-9b3e296f0ba2.png    ") no-repeat center center fixed; 
 }
-#survey-form{
-    margin: auto;
-    background-color: rgba(59, 0, 255, 0.9);
-    border-radius: 4px;
-    width: 60vw;
-    padding: 10px;
-}
+
 #submit{
     width: 150px;
     height:40px;
@@ -26,10 +19,13 @@
     margin:40px 0px 30px 0px;
     transition-duration: 0.2s;
 }
+
 #submit:hover{
-    border-radius: 20px;
+    border-radius: 10px;
     transform: scale(1.1);
+    background-color: yellow;
 }
+
 #dropdown{
     padding: 5px;
     margin: 10px;
@@ -37,31 +33,17 @@
     border: 1px solid #c0c0c0;
     border-radius: 2px; 
 }
-ul{
-    list-style: none;
-    margin:0px;
-}
-.block{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-.leftdiv{
-    padding: 20px;
-    width: 400px;
-    text-align: right;
-}
-.rightdiv{
-    padding: 10px;
-    width: 400px;
-    text-align: left;
-}
+
+
+
 .header{
     margin: 20px 0px 40px 0px;
 }
+
 .userRatings{
     margin :10px;
 }
+
 .teste{
     transform: scale(2.0);
 }
@@ -71,3 +53,102 @@ input {
     border: 1px solid #c0c0c0;
     border-radius: 2px;
 }
+
+@media screen
+    and (min-width: 360px)
+    and (max-width: 540px) {
+ 
+    ul{
+        list-style: none;
+        text-align: left;
+    }
+    #survey-form{
+        margin: auto;
+        font-size:14px;
+        background-color: rgba(255, 255, 255, 0.507);
+        border-radius: 4px;
+        width: 80vw;
+        padding: 10px;
+    }
+
+    .block{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .leftdiv{
+        padding: 20px;
+    }
+    .rightdiv{
+        padding: 10px;
+    }
+}
+
+@media screen
+    and (min-width: 540px)
+    and (max-width: 980px) {
+      
+
+    ul{
+        list-style: none;
+        margin-left:20%;
+        text-align: left;
+    }
+    #survey-form{
+        margin: auto;
+        font-size:14px;
+        background-color: rgba(255, 255, 255, 0.507);
+        border-radius: 4px;
+        width: 80vw;
+        padding: 10px;
+    }
+
+    .block{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .leftdiv{
+        padding: 20px;
+    }
+    .rightdiv{
+        padding: 10px;
+    }
+} 
+@media screen 
+    and (min-width: 980px)
+    and (max-width: 1920px) {
+
+    ul{
+        list-style: none;
+        margin:0px;
+    }
+
+    #survey-form{
+        margin: auto;
+        font-size:14px;
+        background-color: rgba(255, 255, 255, 0.507);
+        border-radius: 4px;
+        width: 60vw;
+        padding: 10px;
+    }
+
+    .block{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .leftdiv{
+        padding: 20px;
+        width: 400px;
+        text-align: right;
+    }
+    .rightdiv{
+        padding: 10px;
+        width: 400px;
+        text-align: left;
+    }
+} 
